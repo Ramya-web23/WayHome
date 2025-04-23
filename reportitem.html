@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayHome</title>
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+    />
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 pr-5 pl-5">
+        <a class="navbar-brand" href="#">WayHome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lostitems.html">Lost Items</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reportitem.html">Report Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    <div class="container-fluid info-section">
+        <div class="row align-items-center">
+        <div class="col-12 p-5 report-items-top-section">
+            <h1>Report an Item</h1>
+            <p>Fill out the form below to report a lost or found item.</p>
+        </div>
+        </div>
+        <div class="text-center mb-4 pt-5">
+        <button type="button" class="btn btn-primary btn-lg">I lost something</button>
+        <button type="button" class="btn btn-secondary btn-lg">I found something</button>
+        </div>
+        <form>
+        <div class="container">
+            <div class="row">
+            <div class="form-group col-12">
+                <label for="formGroupExampleInput">Item Name*</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter item name">
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="col-12 col-md-6">
+                <p>Category:</p>
+                <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Categories
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Electronics</a>
+                    <a class="dropdown-item" href="#">Clothing</a>
+                    <a class="dropdown-item" href="#">Accessory</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="text-dark">Date Lost*</p>
+                <label>Select Date: </label>
+                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                <input class="form-control" type="text" readonly />
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-group">
+            <label for="formGroupExampleInput">Last seen location*</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter location">
+            </div>
+            <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description*</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Contact Information</h1>
+            <div class="row">
+            <div class="form-group col-12 col-lg-6">
+                <label for="formGroupExampleInput">Name*</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
+            </div>
+            <div class="form-group col-12 col-lg-6">
+                <label for="formGroupExampleInput">Email*</label>
+                <input type="email" class="form-control" id="formGroupExampleInput"  placeholder="Enter your email id">
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="form-group col-12">
+                <label for="formGroupExampleInput">Phone number*</label>
+                <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="Enter your mobile number">
+            </div>
+            </div>
+        </div>
+        <div class="col-12 text-center mt-3 pb-5">
+            <button class="btn btn-primary">Submit Report</button>
+        </div>
+        </form>
+    </div>
+    <div class="recently-found-item-section container-fluid">
+        <h1 class="text-center py-5">Tips for reporting</h1>
+        <div class="row text-center p-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card2">
+            <h3>Be Specific</h3>
+            <p>Include as many details as possible about the item, such as brand, color, and any identifying marks.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card2">
+            <h3>Upload Photos</h3>
+            <p>If possible, upload a clear photo of the item to help with identification.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card2">
+            <h3>Check Frequently</h3>
+            <p>Regularly check the lost & found listings for updates on your item.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light py-5 ">
+        <div class="row">
+    
+          <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+            <h2 class="fw-bold">WayHome</h2>
+            <p class="text-muted">Helping students find what matters.</p>
+          </div>
+      
+          <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+            <h5 class="fw-semibold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-decoration-none text-light d-block py-1" href="Homepage.html">Home</a></li>
+              <li><a class="text-decoration-none text-light d-block py-1" href="about.html">About</a></li>
+              <li><a class="text-decoration-none text-light d-block py-1" href="lostitems.html">Lost Items</a></li>
+              <li><a class="text-decoration-none text-light d-block py-1" href="reportitem.html">Report Item</a></li>
+              <li><a class="text-decoration-none text-light d-block py-1" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <h5 class="fw-semibold">Contact Us</h5>
+            <p class="text-muted mb-1">CSBS Department</p>
+            <p class="text-muted mb-1">email@example.com</p>
+            <p class="text-muted">phone number</p>
+          </div>
+        </div>
+      
+        <hr class="border-light my-4" />
+    
+        <div class="text-center">
+          <p class="mb-0 text-muted">© 2025 Campus Lost and Found. All rights reserved. Name & Team</p>
+        </div>
+      </div>  
+    
+      
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+            integrity=
+        "sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function () {
+                $("#datepicker").datepicker({ 
+                    autoclose: true, 
+                    todayHighlight: true,
+                }).datepicker('update', new Date());
+            });
+      </script>
+      </script>
+      <script src=
+    "https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+          integrity=
+    "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+          crossorigin="anonymous">
+      </script>
+      <script src=
+    "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+          integrity=
+    "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+          crossorigin="anonymous">
+      </script>
+      <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+      </script>    
+</body>
+</html>

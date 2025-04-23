@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  
+}
+
+.home-page, .recently-found-item-section, .contact-section, .freq-session {
+    background-color: black;
+    color: white;
+}
+
+.how-it-works-section, .success-section, .info-section , .contact-us-middle-section{
+    background-color: #1A1A1D;
+    color: white;
+}
+
+.navbar {
+    background-color: #1A1A1D;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+.main-heading {
+    font-size: 35px;
+    color: white;
+}
+
+.home-page-img {
+    width: 100%;
+    height: auto;
+}
+
+.how-it-works-section {
+    background-color: #1A1A1D;
+    margin: 0;
+}
+
+.card1 {
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.card2 {
+    background-color: #1A1A1D;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.carousel-inner {
+    padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+
+    .home-page .col-12.col-lg-6 {
+        text-align: center;
+    }
+
+    .home-page .col-12.col-lg-6 .main-heading {
+        font-size: 28px;
+    }
+
+    .home-page .col-12.col-lg-6 .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .how-it-works-section, .success-section {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .how-it-works-section .cards1,
+    .recently-found-item-section .cards2 {
+        margin-bottom: 20px;
+    }
+
+    .carousel-inner p {
+        font-size: 14px;
+    }
+}
+
+.about-top-section, .report-items-top-section, .contact-us-top-section, .bottom-sections{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.about-page-img{
+    height: 400px;
+    width: 400px;
+}
+.about-middle-section, .report-items-middle-section{
+    background-color: #1A1A1D;
+    color: white;
+}
+.our-team-section, .Page{
+    background-color: black;
+    color:white;
+}
+.members{
+    background-color: #1A1A1D;
+    padding: 10px;
+    border-radius: 20px;
+}
+.mem-heading{
+    font-size: 28px;
+}
+.container-fluid.Page, .container-fluid.Page .row {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .accordion .btn-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #222;
+  }
+  .accordion .card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  .accordion .btn-link::after {
+    content: '+';
+    float: right;
+    font-size: 1.5rem;
+  }
+  .accordion .btn-link[aria-expanded="true"]::after {
+    content: '×';
+  }
